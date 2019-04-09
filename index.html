@@ -1,105 +1,297 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="no-js" lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Bootstrap Basic Portfolio</title>
-
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-    <!-- Our own CSS stylesheet -->
-    <link rel="stylesheet" href="assets/style.css" media="screen">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="index.html" id="logo">Benjamin Ngo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                </ul>
+  <div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <ul id="menu" class="shadow">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <!-- End header -->
+
+  <div id="lead">
+    <div id="lead-content">
+      <h1>Benjamin Ngo</h1><br>
+      <h2>Full-Stack Web Developer</h2><br>
+
+      <a href="assets/Ben's Resume tech.pdf" download class="btn-rounded-white">Resume</a>
+    </div>
+    <!-- End #lead-content -->
+
+    <div id="lead-overlay"></div>
+
+    <div id="lead-down">
+      <span>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </span>
+    </div>
+    <!-- End #lead-down -->
+  </div>
+  <!-- End #lead -->
+
+  <div id="about">
+    <div class="container">
+      <h2 class="heading" id="aboutHeader">About Me</h2>
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="project shadow-large">
+            <div class="project-image">
+              <img id="profilePic" src="assets/images/Screenshot_20190123-032148_Gallery.png" height="300px" width="300px" />
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3> University of Pennsylvania Coding Bootcamp Graduate</h3>
+              <h4 id="brandstatment">
+                As a driven and tech-savvy Web Developer, I have always had a strong gravitational pull towards
+                technology. It developed after I graduated with an associate degree in Culture, Science, and Technology.
+                Upon graduation, my friend introduced me to coding. For an entire month, I delved into coding and taught
+                myself HTML and CSS. Working as freelance web page developer, I acquired the technical skills of
+                learning new programing languages, coding, and design. From the work, I knew that I wanted to acquire
+                the skills to be a full-stack developer. Currently, I am attending an intensive LPS Coding Boot Camp at
+                the University of Pennsylvania to obtain my certification. I am gaining experience in the foundations of
+                web development while honing my skills in HTML5, CSS, Bootstrap, Javascript, and jQuery. Upon
+                completion, I will be a qualified full-stack developer. Coding has become my passion because it is
+                challenging and rewarding at the same time.
+              </h4>
+
+
+
+            </div>
+            <!-- End .project-info -->
+          </div>
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- End of navbar -->
+      </div>
+    </div>
+    <!-- End #about -->
+    <br>
+    <div id="experience" class="background-alt">
 
-    <!-- Start of container -->
-    <main class="container">
-        <section class="row">
-            <div class="col-md-8">
-                <article class="block">
-                    <h1 class="block-header">About Me</h1>
-                    <hr />
-                    <img src="assets/imgs/natebeach.jpeg" alt="" id="about-image" />
-                    <p>Hello, my name is Benjamin. Born and raised in Philadelphia. Recent graduate at Community College
-                        of
-                        Philadelphia under
-                        Associate of Art major in Culture, Science, and technology. A friend introduces me into coding
-                        and
-                        now
-                        attending the
-                        University Of Pennsylvania coding boot camp to get experiences and learn new skills. I love to
-                        read,
-                        travel, and do
-                        outdoors things. My guilty please is watching anime, binge on any shows online, and gym.
-                        YouTube,
-                        reddit,
-                        and Medium
-                        the three most three things I visit daily. Because youtube has ton of information you get,
-                        reddit
-                        and
-                        Medium are
-                        sources where I can get my knowledge and people experience.</p>
-                    <p>The one thing I can live without is bean spout because the
-                        taste makes me gag never like it when I was a child. It’s a pleasure to meet you all, and
-                        hopefully
-                        to meet
-                        you in person.
-                    </p>
-                </article>
+
+      <h2 class="heading">Coding Timeline</h2>
+      <div id="experience-timeline">
+
+        <div data-date="October 2018 - December 2018">
+          <h3>Researched Topics on Programming</h3>
+          <h4></h4>
+          <p>
+            Dabbled in free online resources regarding coding to determine if it was a good fit for me .
+          </p>
+        </div>
+
+
+        <div data-date="December 2019 - January 2019">
+          <h3>Decided to focus on coding and applied up for coding bootcamp</h3>
+          <h4></h4>
+          <p>
+            Looked into coding and found that it interested me more than my current major, decided to dive right in and
+            apply for local coding bootcamp .
+          </p>
+        </div>
+
+        <div data-date="January 2019 – July 2019">
+          <h3>Attend UPenn Coding Bootcamp</h3>
+          <h4></h4>
+          <p>
+            Currently attending a 6 month program to learn the fundamentals to full stack web development .
+          </p>
+
+
+
+        </div>
+      </div>
+      <!-- End #experience -->
+      <br>
+      <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+          <h3>Community College Of Philadelphia</h3>
+          <span class="education-date">Sept 2016 - Oct 2018</span>
+          <h4>Major: Culture, Science, and Technology</h4>
+          <ul>
+            <li>
+              Graduate with asscociate degree in art .
+            </li>
+
+          </ul>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+          <h3>University of Pennsylvania </h3>
+          <span class="education-date">January 2019 - July 2019</span>
+          <h4>6 months Full Stack Web Development Course </h4>
+          <ul>
+            <li>
+              Coding bootcamp aimed to teach student fundamentals , best practices , app development , and solving
+              technical problems.
+            </li>
+            <li>
+              Certificate - Full Stack Web Developer
+            </li>
+
+          </ul>
+        </div>
+        <!-- End .education-block -->
+
+      <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+          <div class="row">
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="assets/images/58419ca3a6515b1e0ad75a64.png" width="300px" height="300px" />
+              </div>
+              <!-- End .project-image -->
+              <div class="project-info">
+                <h3>Trivia-Game</h3>
+                <p>
+                    Created a Trivia game using JavaScript for the logic and jQuery to manipulate HTML and create a
+                    stylish website . A short fun interactive game to test ones solar system knowledge .
+
+                </p>
+                <br>
+                <a href="https://benngo89.github.io/Trivia-Game/">View Project</a>
+              </div>
+              <!-- End .project-info -->
             </div>
-        </section>
-    </main>
-    <!-- End of container -->
 
-    <!-- Start of footer -->
-    <footer class="footer">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-            &copy; Copyright 2019 Benjamin Ngo
-        </p>
-    </footer>
-    <!-- End of footer -->
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="assets/images/finding_philly_thumbnail.png" width="300px" height="300px" />
+              </div>
+              <!-- End .project-image -->
+              <div class="project-info">
+                <h3>Group Project 1</h3>
+                <p>
+                  Finding Philly is for all of our philly foodies (colloquially reffered to as 'phoodillies') who either
+                  want to search cocktails by ingredient or find a cool place to eat. This city has a ton of great
+                  places, and liquor laws are weird so get ready with a cocktail just for you!
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  The goal of this app is to help people find cocktail recipies or places to eat in our beautiful city
+                  of Philadelphious.
 
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+                </p>
+                <br>
+                <a href="https://github.com/allegraanka/project1">View Project</a>
+              </div>
+              <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
 
+            <div class="project shadow-large">
+              <div class="project-image">
+                <img src="assets/images/pcqrLxKzi.png" width="300px" height="300px" />
+              </div>
+              <!-- End .project-image -->
+              <div class="project-info">
+                <h3>Unit-4 game guess the diamond</h3>
+                <p>
+                  A number is giving you and guess which diamonds adds up to the number is giving at the start
+
+                </p>
+                <br>
+                <a href=" https://benngo89.github.io/unit-4-game/">View Project</a>
+              </div>
+              <!-- End .project-info -->
+            </div>
+
+            
+
+      <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+
+        </ul>
+      </div>
+      <!-- End #skills -->
+
+      <div id="contact">
+        <h2>Get in Touch</h2><br>
+        <div id="contact-form">
+          <form method="POST" action="https://formspree.io/benjingo89@gmail.com">
+            <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <input type="email" name="_replyto" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <!-- End #contact-form -->
+      </div>
+      <!-- End #contact -->
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 copyright">
+              <p>
+                Copyright &copy; 2019 Benjamin Ngo
+              </p>
+            </div>
+            <div class="col-sm-2 top">
+              <span id="to-top">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="col-sm-5 social">
+              <ul>
+                <li>
+                  <a href="https://github.com/syoeung" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
